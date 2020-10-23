@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#27EF9393"
+    android:padding="30dp"
+    android:transitionName="transition_login"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="70dp"
+            android:fontFamily="@font/aclonica"></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/otp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="20dp"
+                android:hint="   Enter Otp"
+                android:background="@drawable/corners"></EditText>
+            <Button
+                android:id="@+id/otp_ver"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Verify"
+                android:textSize="20dp"
+                android:background="@drawable/corners"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"></Button>
+            <ProgressBar
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_alignBottom="@+id/otp_ver"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/progressBar"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
